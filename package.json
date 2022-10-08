@@ -1,0 +1,31 @@
+{
+  "name": "climbinglife",
+  "version": "1.0.0",
+  "description": "My repo for learning CQRS/This-less and other juicy stuff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bukareszt/ClimbingLife.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bukareszt/ClimbingLife/issues"
+  },
+  "homepage": "https://github.com/Bukareszt/ClimbingLife#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,4 +1,3 @@
 
-const shit = "dwa";
-
-
+const shit = 'dwa'
+console.log(shit)

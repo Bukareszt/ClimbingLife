@@ -1,0 +1,20 @@
+name: Lint Your Code!
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  Lint Code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lint code
+        run: npm run lint
+
